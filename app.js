@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 //SET EJS AS VIEW ENGINE
 app.use(cookieParser("shh! some secrete string"));
 app.use(csrf("this_should_be_32_character_long", ["POST", "PUT", "DELETE"]));
-app.set("view engine", "ejs");
+app.set("view engine", "ejs")
 app.use(
   session({
     secret: "my-super-secret-key-21728172615261562",
