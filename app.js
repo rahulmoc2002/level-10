@@ -32,7 +32,7 @@ app.use(
     },
   })
 );
-app.use(passport.initialize());
+app.use(passport.initialize())
 app.use(passport.session());
 app.use(function (request, response, next) {
   response.locals.messages = request.flash();
