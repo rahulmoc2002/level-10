@@ -14,7 +14,7 @@ const bcrypt = require("bcrypt");
 
 const saltRounds = 10;
 app.set("views", path.join(__dirname, "views"));
-app.use(flash());
+app.use(flash())
 const { Todo, User } = require("./models");
 // eslint-disable-next-line no-unused-vars
 const todo = require("./models/todo");
